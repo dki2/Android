@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/signUplayout"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/textColour"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_user_name"
+            android:hint="@string/full_name"
+            android:textColorHint="@color/textColour"
+            android:id="@+id/etFullName"
+
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/textColour"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/email_id"
+            android:textColor="@color/textColour"
+            android:drawableLeft="@drawable/ic_markunread_24dp"
+            android:id="@+id/etEmaiId" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/textColour"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/password"
+            android:textColor="@color/textColour"
+            android:drawableLeft="@drawable/ic_password"
+            android:id="@+id/etPassword" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textColor="@color/textColour"
+            android:fontFamily="sans-serif-light"
+            android:textColorHint="@color/textColour"
+            android:id="@+id/etConfirmPassword"
+            android:drawablePadding="10dp"
+            android:hint="@string/confirm_password"
+            android:drawableLeft="@drawable/ic_password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:textColor="@color/textColour"
+            android:fontFamily="sans-serif-light"
+            android:textColorHint="@color/textColour"
+            android:hint="Mobile Number :"
+            android:drawableLeft="@drawable/ic_number"
+            android:drawablePadding="10dp"
+
+            android:id="@+id/etMobileNumber" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="India"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_place_24dp"
+                android:fontFamily="sans-serif-light"
+                android:layout_weight="1"
+                android:id="@+id/textView7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Karnataka"
+                android:id="@+id/textView8"
+                android:fontFamily="sans-serif-light"
+                android:layout_weight="1"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:textColor="@color/textColour"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/location"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/spCity" />
+
+        <CheckBox
+            android:id="@+id/terms_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/textColour"
+            android:fontFamily="sans-serif-light"
+            android:checked="false" />
+
+        <Button
+            android:onClick="signUp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/sign_up"
+            android:background="@color/colorAccent"
+            android:id="@+id/btSignUp"
+            android:textColor="@color/icons"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:onClick="signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_member"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:id="@+id/tvAlreadyaMember"
+            android:clickable="true"
+            android:textColor="@color/textColour"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>
